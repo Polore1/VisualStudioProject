@@ -1,0 +1,91 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model ProjectWeb.Models.Entities.Zbor
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<h1>Editare Zbor</h1>
+
+
+@*verificare extra daca exista sau nu utilizator cu acel ID*@
+@if (Model is null)
+{
+    <p>Nu am gasit nici un zbor cu acest ID  </p>
+}
+else
+{
+   <form method="post">
+        <div class="mt-3">
+            <label for="IdZbor">ID Zbor</label>
+            <input type="text" class="form-control" id="IdZbor" asp-for="IdZbor" disabled />
+        </div>
+
+        <div class="mt-3">
+            <label for="NumeCompanie">Nume Companie</label>
+            <input type="text" class="form-control" id="NumeCompanie" name="NumeCompanie" asp-for="NumeCompanie" />
+            <span asp-validation-for="NumeCompanie" class="text-danger"></span>
+        </div>
+
+        <div class="mt-3">
+            <label for="Imbarcare">Locul de Îmbarcare</label>
+            <input type="text" class="form-control" id="Imbarcare" name="Imbarcare" asp-for="Imbarcare" />
+            <span asp-validation-for="Imbarcare" class="text-danger"></span>
+        </div>
+
+        <div class="mt-3">
+            <label for="Destinatie">Destinație</label>
+            <input type="text" class="form-control" id="Destinatie" name="Destinatie" asp-for="Destinatie" />
+            <span asp-validation-for="Destinatie" class="text-danger"></span>
+        </div>
+
+        <div class="mt-3">
+            <label for="DataPlecare">Data Plecare</label>
+            <input type="datetime-local" class="form-control" id="DataPlecare" name="DataPlecare" asp-for="DataPlecare"  />
+            <span asp-validation-for="DataPlecare" class="text-danger"></span>
+        </div>
+
+        <div class="mt-3">
+            <label for="GreutateMaximaBagaj">Greutate Maximă Bagaj (kg)</label>
+            <input type="number" class="form-control" id="GreutateMaximaBagaj" name="GreutateMaximaBagaj" step="0.01" asp-for="GreutateMaximaBagaj" />
+            <span asp-validation-for="GreutateMaximaBagaj" class="text-danger"></span>
+        </div>
+
+        <div class="mt-3">
+            <label for="LocuriDisponibile">Locuri Disponibile</label>
+            <input type="number" class="form-control" id="LocuriDisponibile" name="LocuriDisponibile" asp-for="LocuriDisponibile" />
+            <span asp-validation-for="LocuriDisponibile" class="text-danger"></span>
+        </div>
+
+        <div class="mt-3">
+            <label for="Status">Status</label>
+            <select class="form-control" id="Status" name="Status">
+                <option value="In Asteptare" >In Asteptare</option>
+                <option value="Anulat" >Anulat</option>
+                <option value="Confirmat">Confirmat</option>
+            </select>
+            <span asp-validation-for="Status" class="text-danger"></span>
+        </div>
+
+        <div class="mt-3">
+            <a class="btn btn-secondary" asp-controller="Zbor" asp-action="List">Înapoi la listă</a>
+            <button type="submit" class="btn btn-primary">Salvează Modificările</button>
+        </div>
+    </form>
+
+}

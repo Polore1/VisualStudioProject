@@ -1,0 +1,83 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@{
+    var successMessage = TempData["SuccessMessage"] as string;
+}
+@model List<ProjectWeb.Models.Entities.Zbor>
+
+
+<h1>Zboruri disponibile</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            @* <th>IdZbor</th> *@
+            <th>Nume Companie</th>
+            <th>Imbarcare</th>
+            <th>Destinatie</th>
+            <th>Data Plecare</th>
+            @* <th>Greutate Maxima Bagaj</th> *@
+            @* <th>Locuri Disponibile</th> *@
+            <th>Pret</th>
+            <th>Status</th>
+            <th> </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var zbor in Model)
+        {
+            <tr>
+                @* <td>@zbor.IdZbor</td> *@
+                <td>@zbor.NumeCompanie</td>
+                <td>@zbor.Imbarcare</td>
+                <td>@zbor.Destinatie</td>
+                <td>@zbor.DataPlecare</td>
+                @* <td>@zbor.GreutateMaximaBagaj</td> *@
+                @* <td>@zbor.LocuriDisponibile</td> *@
+                <td>@zbor.Pret€</td>
+                <td>@zbor.Status</td>
+                <td>
+                    @*Creare buton pentru editare zbor*@
+                    @* <a class="btn btn-primary" asp-controller="Zbor" asp-action="Edit" asp-route-id="@zbor.IdZbor">Edit</a> *@
+
+                    @*Creare buton sterge zbor*@
+                    @* <form asp-controller="Zbor" asp-action="Delete" method="post" style="display:inline;" onsubmit="return confirm('Ești sigur că vrei să ștergi acest zbor?');"> *@
+                    @*     <input type="hidden" name="IdZbor" value="@zbor.IdZbor" /> *@
+                    @*     <button type="submit" class="btn btn-danger">Șterge</button> *@
+                    @* </form> *@
+
+                    @* Creare buton pentru check-in la zborul ales *@
+                    @* @if (zbor.Status == "Planificat") *@
+                    @* { *@
+                    @*     <a asp-action="Checkin" asp-route-id="@zbor.IdZbor" class="btn btn-primary">Check-in</a> *@
+                    @* } *@
+                    @* else *@
+                    @* { *@
+                    @*     <span class="text-muted">Check-in indisponibil</span> *@
+                    @* } *@
+
+                    @* Detalii si pot sa ma duc de aici la check-in *@
+                    @if (zbor.Status == "Planificat")
+                    {
+                        <a asp-controller="Zbor" asp-action="Detalii" asp-route-id="@zbor.IdZbor" class="btn btn-primary">Detalii</a>
+                    }
+                    else
+                    {
+                        <span class="text-muted">Detalii indisponibile</span>
+                    }
+                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@* <div class="mb-3"> *@
+@*     <a class="btn btn-success" asp-controller="Zbor" asp-action="Add">Adaugă zbor</a> *@
+@* </div> *@

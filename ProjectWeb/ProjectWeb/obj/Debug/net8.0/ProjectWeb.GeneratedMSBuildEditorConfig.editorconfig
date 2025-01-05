@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProjectWeb
+build_property.RootNamespace = ProjectWeb
+build_property.ProjectDir = D:\ProjectPPAW\VisualStudioProject\ProjectWeb\ProjectWeb\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\ProjectPPAW\VisualStudioProject\ProjectWeb\ProjectWeb
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/ProjectPPAW/VisualStudioProject/ProjectWeb/ProjectWeb/Views/Checkin/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tpblxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectPPAW/VisualStudioProject/ProjectWeb/ProjectWeb/Views/Checkin/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tpblxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectPPAW/VisualStudioProject/ProjectWeb/ProjectWeb/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectPPAW/VisualStudioProject/ProjectWeb/ProjectWeb/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectPPAW/VisualStudioProject/ProjectWeb/ProjectWeb/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectPPAW/VisualStudioProject/ProjectWeb/ProjectWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectPPAW/VisualStudioProject/ProjectWeb/ProjectWeb/Views/Utilizator/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YXRvclxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectPPAW/VisualStudioProject/ProjectWeb/ProjectWeb/Views/Utilizator/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YXRvclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectPPAW/VisualStudioProject/ProjectWeb/ProjectWeb/Views/Utilizator/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGl6YXRvclxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectPPAW/VisualStudioProject/ProjectWeb/ProjectWeb/Views/Zbor/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmJvclxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectPPAW/VisualStudioProject/ProjectWeb/ProjectWeb/Views/Zbor/Detalii.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmJvclxEZXRhbGlpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectPPAW/VisualStudioProject/ProjectWeb/ProjectWeb/Views/Zbor/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmJvclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectPPAW/VisualStudioProject/ProjectWeb/ProjectWeb/Views/Zbor/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmJvclxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectPPAW/VisualStudioProject/ProjectWeb/ProjectWeb/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectPPAW/VisualStudioProject/ProjectWeb/ProjectWeb/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProjectPPAW/VisualStudioProject/ProjectWeb/ProjectWeb/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-azins3730t

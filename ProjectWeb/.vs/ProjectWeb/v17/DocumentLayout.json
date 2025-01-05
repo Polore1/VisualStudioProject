@@ -1,0 +1,377 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\controllers\\checkincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\controllers\\checkincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\services\\checkinservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\services\\checkinservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\views\\checkin\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\views\\checkin\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\models\\addcheckinviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\models\\addcheckinviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\models\\entities\\checkin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\models\\entities\\checkin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\models\\entities\\zbor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\models\\entities\\zbor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\models\\entities\\utilizator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\models\\entities\\utilizator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\views\\zbor\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\views\\zbor\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\views\\zbor\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\views\\zbor\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\views\\zbor\\detalii.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\views\\zbor\\detalii.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\views\\zbor\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\views\\zbor\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\controllers\\zborcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\controllers\\zborcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\interfaces\\izborservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\interfaces\\izborservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\views\\checkin\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\views\\checkin\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\services\\zborservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\services\\zborservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\services\\utilizatorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\services\\utilizatorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\services\\memorycacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\services\\memorycacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\controllers\\utilizatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\controllers\\utilizatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\models\\addzborviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\models\\addzborviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\migrations\\20241219164732_addtaxasuplimentarazbor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\migrations\\20241219164732_addtaxasuplimentarazbor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|d:\\projectppaw\\visualstudioproject\\projectweb\\projectweb\\migrations\\20241219120203_addtaxabagaj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB16199F-ED01-4A63-849D-2E5ED25BA040}|ProjectWeb\\ProjectWeb.csproj|solutionrelative:projectweb\\migrations\\20241219120203_addtaxabagaj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 841,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddCheckinViewModel.cs",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Models\\AddCheckinViewModel.cs",
+              "RelativeDocumentMoniker": "ProjectWeb\\Models\\AddCheckinViewModel.cs",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Models\\AddCheckinViewModel.cs",
+              "RelativeToolTip": "ProjectWeb\\Models\\AddCheckinViewModel.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA1wBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T12:00:55.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CheckinController.cs",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Controllers\\CheckinController.cs",
+              "RelativeDocumentMoniker": "ProjectWeb\\Controllers\\CheckinController.cs",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Controllers\\CheckinController.cs",
+              "RelativeToolTip": "ProjectWeb\\Controllers\\CheckinController.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAQwGMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T16:55:32.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Views\\Checkin\\Add.cshtml",
+              "RelativeDocumentMoniker": "ProjectWeb\\Views\\Checkin\\Add.cshtml",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Views\\Checkin\\Add.cshtml",
+              "RelativeToolTip": "ProjectWeb\\Views\\Checkin\\Add.cshtml",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAowFsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T12:01:08.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CheckinService.cs",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Services\\CheckinService.cs",
+              "RelativeDocumentMoniker": "ProjectWeb\\Services\\CheckinService.cs",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Services\\CheckinService.cs",
+              "RelativeToolTip": "ProjectWeb\\Services\\CheckinService.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAuwEUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T11:55:59.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Checkin.cs",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Models\\Entities\\Checkin.cs",
+              "RelativeDocumentMoniker": "ProjectWeb\\Models\\Entities\\Checkin.cs",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Models\\Entities\\Checkin.cs",
+              "RelativeToolTip": "ProjectWeb\\Models\\Entities\\Checkin.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA3wEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T11:59:47.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Zbor.cs",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Models\\Entities\\Zbor.cs",
+              "RelativeDocumentMoniker": "ProjectWeb\\Models\\Entities\\Zbor.cs",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Models\\Entities\\Zbor.cs",
+              "RelativeToolTip": "ProjectWeb\\Models\\Entities\\Zbor.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAcwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T11:51:41.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Utilizator.cs",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Models\\Entities\\Utilizator.cs",
+              "RelativeDocumentMoniker": "ProjectWeb\\Models\\Entities\\Utilizator.cs",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Models\\Entities\\Utilizator.cs",
+              "RelativeToolTip": "ProjectWeb\\Models\\Entities\\Utilizator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T17:04:19.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Views\\Zbor\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ProjectWeb\\Views\\Zbor\\Edit.cshtml",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Views\\Zbor\\Edit.cshtml",
+              "RelativeToolTip": "ProjectWeb\\Views\\Zbor\\Edit.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T16:52:48.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Views\\Zbor\\Add.cshtml",
+              "RelativeDocumentMoniker": "ProjectWeb\\Views\\Zbor\\Add.cshtml",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Views\\Zbor\\Add.cshtml",
+              "RelativeToolTip": "ProjectWeb\\Views\\Zbor\\Add.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T16:49:49.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Detalii.cshtml",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Views\\Zbor\\Detalii.cshtml",
+              "RelativeDocumentMoniker": "ProjectWeb\\Views\\Zbor\\Detalii.cshtml",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Views\\Zbor\\Detalii.cshtml",
+              "RelativeToolTip": "ProjectWeb\\Views\\Zbor\\Detalii.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAD4AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T16:49:28.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Views\\Zbor\\List.cshtml",
+              "RelativeDocumentMoniker": "ProjectWeb\\Views\\Zbor\\List.cshtml",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Views\\Zbor\\List.cshtml",
+              "RelativeToolTip": "ProjectWeb\\Views\\Zbor\\List.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T16:49:20.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20241219164732_AddTaxaSuplimentaraZbor.cs",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Migrations\\20241219164732_AddTaxaSuplimentaraZbor.cs",
+              "RelativeDocumentMoniker": "ProjectWeb\\Migrations\\20241219164732_AddTaxaSuplimentaraZbor.cs",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Migrations\\20241219164732_AddTaxaSuplimentaraZbor.cs",
+              "RelativeToolTip": "ProjectWeb\\Migrations\\20241219164732_AddTaxaSuplimentaraZbor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T16:47:32.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Views\\Checkin\\List.cshtml",
+              "RelativeDocumentMoniker": "ProjectWeb\\Views\\Checkin\\List.cshtml",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Views\\Checkin\\List.cshtml",
+              "RelativeToolTip": "ProjectWeb\\Views\\Checkin\\List.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T16:04:11.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MemoryCacheService.cs",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Services\\MemoryCacheService.cs",
+              "RelativeDocumentMoniker": "ProjectWeb\\Services\\MemoryCacheService.cs",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Services\\MemoryCacheService.cs",
+              "RelativeToolTip": "ProjectWeb\\Services\\MemoryCacheService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T09:48:07.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ZborService.cs",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Services\\ZborService.cs",
+              "RelativeDocumentMoniker": "ProjectWeb\\Services\\ZborService.cs",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Services\\ZborService.cs",
+              "RelativeToolTip": "ProjectWeb\\Services\\ZborService.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAgwHsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T10:39:55.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IZborService.cs",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Interfaces\\IZborService.cs",
+              "RelativeDocumentMoniker": "ProjectWeb\\Interfaces\\IZborService.cs",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Interfaces\\IZborService.cs",
+              "RelativeToolTip": "ProjectWeb\\Interfaces\\IZborService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T10:39:51.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ZborController.cs",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Controllers\\ZborController.cs",
+              "RelativeDocumentMoniker": "ProjectWeb\\Controllers\\ZborController.cs",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Controllers\\ZborController.cs",
+              "RelativeToolTip": "ProjectWeb\\Controllers\\ZborController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAIwGMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T10:31:17.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UtilizatorService.cs",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Services\\UtilizatorService.cs",
+              "RelativeDocumentMoniker": "ProjectWeb\\Services\\UtilizatorService.cs",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Services\\UtilizatorService.cs",
+              "RelativeToolTip": "ProjectWeb\\Services\\UtilizatorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T16:32:56.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AddZborViewModel.cs",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Models\\AddZborViewModel.cs",
+              "RelativeDocumentMoniker": "ProjectWeb\\Models\\AddZborViewModel.cs",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Models\\AddZborViewModel.cs",
+              "RelativeToolTip": "ProjectWeb\\Models\\AddZborViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T16:05:14.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UtilizatorController.cs",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Controllers\\UtilizatorController.cs",
+              "RelativeDocumentMoniker": "ProjectWeb\\Controllers\\UtilizatorController.cs",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Controllers\\UtilizatorController.cs",
+              "RelativeToolTip": "ProjectWeb\\Controllers\\UtilizatorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T16:05:52.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Program.cs",
+              "RelativeDocumentMoniker": "ProjectWeb\\Program.cs",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Program.cs",
+              "RelativeToolTip": "ProjectWeb\\Program.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwDIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T10:36:12.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20241219120203_AddTaxaBagaj.cs",
+              "DocumentMoniker": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Migrations\\20241219120203_AddTaxaBagaj.cs",
+              "RelativeDocumentMoniker": "ProjectWeb\\Migrations\\20241219120203_AddTaxaBagaj.cs",
+              "ToolTip": "D:\\ProjectPPAW\\VisualStudioProject\\ProjectWeb\\ProjectWeb\\Migrations\\20241219120203_AddTaxaBagaj.cs",
+              "RelativeToolTip": "ProjectWeb\\Migrations\\20241219120203_AddTaxaBagaj.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T12:02:03.926Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@{
+    var successMessage = TempData["SuccessMessage"] as string;
+}
+@model List<ProjectWeb.Models.Entities.Utilizator>
+
+
+<h1>Utilizatori</h1>
+
+@if (!string.IsNullOrEmpty(successMessage))
+{
+    <div class="alert alert-success" role="alert">
+        @successMessage
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nume</th>
+            <th>Email</th>
+            <th>Pasager</th>
+            <th> </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var utilizator in Model){
+            <tr>
+                <td>@utilizator.IdUtilizator</td>
+                <td>@utilizator.Nume</td>
+                <td>@utilizator.Email</td>
+                <td>@utilizator.Pasager</td>
+                <td>
+                    @*Creare buton pentru editare utilizator*@
+                    <a class="btn btn-primary" asp-controller="Utilizator" asp-action="Edit" asp-route-id ="@utilizator.IdUtilizator">Edit</a>
+                   
+                    @*Creare buton sterge utilizator*@
+                    <form asp-controller="Utilizator" asp-action="Delete" method="post" style="display:inline;" onsubmit="return confirm('Ești sigur că vrei să ștergi acest utilizator?');">
+                        <input type="hidden" name="IdUtilizator" value="@utilizator.IdUtilizator" />
+                        <button type="submit" class="btn btn-danger">Șterge</button>
+                    </form>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="mb-3">
+    <a class="btn btn-success" asp-controller="Utilizator" asp-action="Add">Adaugă utilizator</a>
+</div>

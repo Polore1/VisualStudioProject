@@ -1,0 +1,59 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@{
+    var successMessage = TempData["SuccessMessage"] as string;
+}
+@model List<ProjectWeb.Models.Entities.Checkin>
+
+
+<h1>Check In</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id Checkin</th>
+            <th>Utilizator ID</th>
+            <th>Zbor ID</th>
+            <th>Greutate Bagaj</th>
+            <th>Data Checkin</th>
+            <th>Loc Rezervat</th>
+            <th>Este Valid</th>
+            <th> </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var checkin in Model)
+        {
+            <tr>
+                <td>@checkin.IdCheckin</td>
+                <td>@checkin.IdUtilizator</td>
+                <td>@checkin.IdZbor</td>
+                <td>@checkin.GreutateBagaj</td>
+                <td>@checkin.DataCheckin</td>
+                <td>@checkin.LocRezervat</td>
+                <td>@(checkin.EsteValid ? "✅ Valid" : "❌ Invalid")</td>
+                <td>
+                    @*Creare buton pentru editare zbor*@
+                    <a class="btn btn-primary" asp-controller="Checkin" asp-action="Edit" asp-route-id="@checkin.IdZbor">Edit</a>
+
+                    @*Creare buton sterge zbor*@
+                    <form asp-controller="Zbor" asp-action="Delete" method="post" style="display:inline;" onsubmit="return confirm('Ești sigur că vrei să ștergi acest checkin?');">
+                        <input type="hidden" name="IdCheckin" value="@checkin.IdCheckin" />
+                        <button type="submit" class="btn btn-danger">Șterge</button>
+                    </form>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="mb-3">
+    <a class="btn btn-success" asp-controller="Checkin" asp-action="Add">Adaugă checkin</a>
+</div>
