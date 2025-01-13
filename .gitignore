@@ -1,0 +1,18 @@
+
+# Visual Studio
+.vs/
+.vscode/
+.idea/
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Fișierele specifice proiectului
+*.dll
+*.exe
+*.pdb
+*.db
+*.log
