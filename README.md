@@ -1,4 +1,4 @@
-# ProjectWeb - Flight Management System
+# Calatorii - Flight Management System
 
 ## Description
 
@@ -39,35 +39,53 @@ ProjectWeb is a flight management application that allows users to view, modify,
 
  - You can open Documentation file for some pictures and some more detalis about this project
 
+
+
 ### ------------------- Screenshots -------------------
+
 Here are some screenshots of the application in action:
 
 ### Database
-![Database](assets/images/databse.png)
+![Database](assets/images/database.png)  
 Here you can see the structure of the database created in MySQL Workbench.
 
 ### Homepage
-![Homepage](assets/images/homepage.png)
-The homepage of the application shows the appplication name. From here we can start to book a flight.
+![Homepage](assets/images/homepage.png)  
+The homepage of the application shows the application name. From here, users can start booking a flight.
+
+### Flight List
+![Flight List](assets/images/all-flights.png)  
+This page displays a list of available flights and provides links to manage flight bookings.
 
 ### Flight Details
-![Flight List](assets/images/all-flights.png)
-This page displays shows the list of available flights and provides links to manage flight bookings.
+![Flight Details](assets/images/flight-details.png)  
+This page shows detailed information for a selected flight, such as the destination, departure time, and available seats.
 
-### Flight Details
-![Flight Details](assets/images/flight-details.png)
-This page displays detailed information for a selected flight, such as destination, departure time, and available seats.
+### Check-in Page
+![Check-in](assets/images/checkin-page.png)  
+Here, users can check in for their flight. They can also add the weight of their luggage. If the luggage exceeds the weight limit, an additional fee will be added.
 
-### Check-in
-![Check-in](assets/images/checkin-page.png)
-Here users can check in for their flight. They can add the wheights of their lagguadge. If is more that it should be, that a fee would be added.
+### Baggage Fee
+![Baggage Fee](assets/images/baggage-fee.png)  
+Here you can see how the fee is calculated based on the weight of the luggage.
 
-### 
-![Check-in](assets/images/checkin-page.png)
-Here users can check in for their flight. They can add the wheights of their lagguadge. If is more that it should be, that a fee would be added.
+### Check-ins Overview
+![Check-in List](assets/images/checkin-list.png)  
+This page displays all the check-ins stored in the database.
 
 ### Users
-![Users](assets/images/users.png)
-Here you can see all users that are in database.
+![Users](assets/images/users.png)  
+Here you can see a list of all users in the database.
 
+### Add User
+![Add User](assets/images/add-user.png)  
+Here you can see the interface for adding a new user to the database.
+
+### Edit User
+![Edit User](assets/images/edit-user.png)  
+Here you can see how you can edit a user’s information in the database.
+
+### Author Details
+![Author](assets/images/author.png)  
+Here you can find some details about the author of this project.
 
