@@ -2,7 +2,7 @@
 
 ## Description
 
-ProjectWeb is a flight management application that allows users to view, modify, and book flights. The application provides comprehensive functionality for managing flights, including data validation, calculating additional baggage fees, and managing available seats.
+"Calatorii" is a flight management application that allows users to view, modify, and book flights. The application provides comprehensive functionality for managing flights, including data validation, calculating additional baggage fees, and managing available seats.
 
 
 ## Features
