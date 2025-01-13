@@ -1,18 +1,20 @@
-
-# Visual Studio
-.vs/
-.vscode/
-.idea/
+# Ignoră directoarele de build (bin și obj)
 bin/
 obj/
+
+# Ignoră fișierele de configurare specifice Visual Studio
+.vs/
+.vscode/
+
+# Ignoră fișierele de configurare locale
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
 
-# Fișierele specifice proiectului
+# Ignoră fișierele generate de compilator sau de runtime
 *.dll
 *.exe
 *.pdb
-*.db
 *.log
+*.bak
