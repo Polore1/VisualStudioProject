@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model AddCheckinViewModel
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="idCheckin" />
+    <div class="form-group">
+        <label asp-for="IdUtilizator"></label>
+        <select asp-for="IdUtilizator" class="form-control" asp-items="Model.Utilizatori">
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="IdZbor"></label>
+        <select asp-for="IdZbor" class="form-control" asp-items="Model.Zboruri">
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="GreutateBagaj">Greutatea bagaj</label>
+        <input asp-for="GreutateBagaj" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="LocRezervat">Loc Rezervat</label>
+        <input asp-for="LocRezervat" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="PretFinal">Pret</label>
+        <input asp-for="PretFinal" class="form-control" readonly />
+    </div>
+    @* <div class="form-group"> *@
+    @*     <label asp-for="" *@
+    @* </div> *@
+    <button type="submit" class="btn btn-primary">Salvează</button>
+</form>

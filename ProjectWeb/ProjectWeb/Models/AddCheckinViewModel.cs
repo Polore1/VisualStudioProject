@@ -31,6 +31,7 @@ namespace ProjectWeb.Models
         public string? LocRezervat { get; set; }
 
         public decimal PretFinal { get; set; }
+        public int idCheckin { get; internal set; }
 
         //EsteValid
 

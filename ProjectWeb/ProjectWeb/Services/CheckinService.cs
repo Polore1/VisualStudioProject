@@ -5,7 +5,7 @@ using ProjectWeb.Models.Entities;
 
 namespace ProjectWeb.Services
 {
-    public class CheckinService:ICheckinService
+    public class CheckinService : ICheckinService
     {
         private readonly ApplicationDB _dbContext;
 
@@ -22,19 +22,25 @@ namespace ProjectWeb.Services
                 .ToListAsync();
         }
 
-        public async Task<decimal> CalculeazaTaxaBagaj(Checkin checkin)
+        public async Task<(decimal taxaSuplimentara, string mesaj)> CalculeazaTaxaBagaj(Checkin checkin)
         {
-            // Verificăm dacă greutatea bagajului depășește greutatea maximă permisă
+            if (checkin.Zbor == null)
+                throw new InvalidOperationException("Detaliile zborului lipsesc.");
+
             if (checkin.GreutateBagaj > checkin.Zbor.GreutateMaximaBagaj)
             {
-                // Calculăm taxa pentru fiecare kg în exces (50 EUR pe kg)
                 decimal kgExces = checkin.GreutateBagaj - checkin.Zbor.GreutateMaximaBagaj;
-                decimal taxaSuplimentara = kgExces * 50; // 50 EUR pentru fiecare kg în exces
-                return taxaSuplimentara;
+                decimal taxaSuplimentara = kgExces * checkin.Zbor.TaxaSuplimentara;
+
+                // Asigură-te că taxa suplimentară este afișată corect (formatată în EUR)
+                var taxaSuplimentaraFormatted = string.Format("{0:N2}", taxaSuplimentara); // Formatează cu două zecimale
+
+
+                string mesaj = $"O taxă suplimentară de {taxaSuplimentara} EUR a fost calculată pentru bagajul în exces (exces: {kgExces} kg).";
+                return (taxaSuplimentara, mesaj);
             }
 
-            // Nu există taxe suplimentare dacă greutatea bagajului este validă
-            return 0m;
+            return (0m, "Fără taxe suplimentare pentru bagaj.");
         }
         public decimal CalculeazaPretTotal(Checkin checkin)
         {
@@ -59,15 +65,24 @@ namespace ProjectWeb.Services
         public async Task<Checkin> GetCheckinByIdAsync(int id)
         {
             return await _dbContext.Checkin
-                .Include(c => c.Utilizator)
-                .Include(c => c.Zbor)
-                .FirstOrDefaultAsync(c => c.IdCheckin == id);
+                 .Include(c => c.Utilizator)
+                 .Include(c => c.Zbor)
+                 .FirstOrDefaultAsync(c => c.IdCheckin == id);
         }
 
         public async Task AddCheckinAsync(Checkin checkin)
         {
-            // Adăugăm taxa suplimentară la check-in
-            checkin.PretFinal = await CalculeazaTaxaBagaj(checkin);
+            //verificare zbor valid
+            if (checkin.Zbor == null)
+                checkin.Zbor = await _dbContext.Zbor.FindAsync(checkin.IdZbor);
+
+            if (checkin.Zbor == null)
+                throw new InvalidOperationException("Zborul nu poate fi găsit.");
+
+            //calcul taxa suprlimentara
+            var (taxaSuplimentara, _) = await CalculeazaTaxaBagaj(checkin);
+
+            checkin.PretFinal = checkin.Zbor.Pret + taxaSuplimentara;
 
             _dbContext.Checkin.Add(checkin);
             await _dbContext.SaveChangesAsync();
@@ -85,7 +100,11 @@ namespace ProjectWeb.Services
 
             return greutateValida && dataValida && locValid;
         }
-
+        public async Task UpdateCheckinAsync(Checkin checkin)
+        {
+            _dbContext.Checkin.Update(checkin);
+            await _dbContext.SaveChangesAsync();
+        }
         public async Task DeleteCheckinByIdAsync(int id)
         {
             var checkin = await _dbContext.Checkin.FindAsync(id);
@@ -95,5 +114,7 @@ namespace ProjectWeb.Services
                 await _dbContext.SaveChangesAsync();
             }
         }
+
+        
     }
 }

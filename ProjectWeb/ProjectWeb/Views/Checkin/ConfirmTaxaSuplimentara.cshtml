@@ -1,0 +1,37 @@
+﻿@model ProjectWeb.Models.AddCheckinViewModel
+
+@{
+    ViewData["Title"] = "Confirmare Taxă Suplimentară";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Confirmare Taxă Suplimentară</h2>
+
+    <div class="alert alert-warning text-center p-4">
+        <p class="lead">@ViewData["TaxaSuplimentaraMessage"]</p>
+        <!-- Afișarea taxei suplimentare cu formatare corectă -->
+        @* <p><strong style="color: #f39c12;">Taxă suplimentară: <span id="taxaValue">120.00</span> EUR</strong></p> *@
+    </div>
+
+    <form method="post" asp-action="Add">
+        <input type="hidden" asp-for="IdUtilizator" />
+        <input type="hidden" asp-for="IdZbor" />
+        <input type="hidden" asp-for="GreutateBagaj" />
+        <input type="hidden" asp-for="LocRezervat" />
+        <input type="hidden" asp-for="DataCheckin" />
+        <input type="hidden" asp-for="PretFinal" />
+        <input type="hidden" name="confirmTaxaSuplimentara" value="true" />
+
+        <div class="d-flex justify-content-between mt-4">
+            <!-- Butonul de confirmare a check-in-ului -->
+            <button type="submit" class="btn btn-success btn-lg">Confirmă și continuă</button>
+            <!-- Butonul de redirecționare către lista de zboruri -->
+            <a href="@Url.Action("List", "Zbor")" class="btn btn-secondary btn-lg">Vezi zboruri</a>
+        </div>
+    </form>
+</div>
+
+<script>
+    // Modifică valoarea taxei dacă este necesar
+    document.getElementById('taxaValue').textContent = parseFloat(document.getElementById('taxaValue').textContent).toFixed(2);
+</script>

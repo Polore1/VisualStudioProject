@@ -1,83 +1,74 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
-@{
-}
 
 @{
     var successMessage = TempData["SuccessMessage"] as string;
 }
+
 @model List<ProjectWeb.Models.Entities.Zbor>
 
+<div class="container mt-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4 text-primary">Zboruri disponibile</h1>
+    </div>
 
-<h1>Zboruri disponibile</h1>
+    @if (!string.IsNullOrEmpty(successMessage))
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @successMessage
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
 
-
-<table class="table">
-    <thead>
-        <tr>
-            @* <th>IdZbor</th> *@
-            <th>Nume Companie</th>
-            <th>Imbarcare</th>
-            <th>Destinatie</th>
-            <th>Data Plecare</th>
-            @* <th>Greutate Maxima Bagaj</th> *@
-            @* <th>Locuri Disponibile</th> *@
-            <th>Pret</th>
-            <th>Status</th>
-            <th> </th>
-        </tr>
-    </thead>
-
-    <tbody>
-        @foreach (var zbor in Model)
-        {
+    <table class="table table-striped table-hover">
+        <thead class="thead-dark">
             <tr>
-                @* <td>@zbor.IdZbor</td> *@
-                <td>@zbor.NumeCompanie</td>
-                <td>@zbor.Imbarcare</td>
-                <td>@zbor.Destinatie</td>
-                <td>@zbor.DataPlecare</td>
-                @* <td>@zbor.GreutateMaximaBagaj</td> *@
-                @* <td>@zbor.LocuriDisponibile</td> *@
-                <td>@zbor.Pret€</td>
-                <td>@zbor.Status</td>
-                <td>
-                    @*Creare buton pentru editare zbor*@
-                    @* <a class="btn btn-primary" asp-controller="Zbor" asp-action="Edit" asp-route-id="@zbor.IdZbor">Edit</a> *@
-
-                    @*Creare buton sterge zbor*@
-                    @* <form asp-controller="Zbor" asp-action="Delete" method="post" style="display:inline;" onsubmit="return confirm('Ești sigur că vrei să ștergi acest zbor?');"> *@
-                    @*     <input type="hidden" name="IdZbor" value="@zbor.IdZbor" /> *@
-                    @*     <button type="submit" class="btn btn-danger">Șterge</button> *@
-                    @* </form> *@
-
-                    @* Creare buton pentru check-in la zborul ales *@
-                    @* @if (zbor.Status == "Planificat") *@
-                    @* { *@
-                    @*     <a asp-action="Checkin" asp-route-id="@zbor.IdZbor" class="btn btn-primary">Check-in</a> *@
-                    @* } *@
-                    @* else *@
-                    @* { *@
-                    @*     <span class="text-muted">Check-in indisponibil</span> *@
-                    @* } *@
-
-                    @* Detalii si pot sa ma duc de aici la check-in *@
-                    @if (zbor.Status == "Planificat")
-                    {
-                        <a asp-controller="Zbor" asp-action="Detalii" asp-route-id="@zbor.IdZbor" class="btn btn-primary">Detalii</a>
-                    }
-                    else
-                    {
-                        <span class="text-muted">Detalii indisponibile</span>
-                    }
-                    
-                </td>
+                <th>Nume Companie</th>
+                <th>Locul de Îmbarcare</th>
+                <th>Destinație</th>
+                <th>Data Plecare</th>
+                <th>Pret</th>
+                <th>Status</th>
+                <th>Acțiuni</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var zbor in Model)
+            {
+                <tr>
+                    <td>@zbor.NumeCompanie</td>
+                    <td>@zbor.Imbarcare</td>
+                    <td>@zbor.Destinatie</td>
+                    <td>@zbor.DataPlecare</td>
+                    <td>@zbor.Pret€</td>
+                    <td>@zbor.Status</td>
+                    <td class="d-flex justify-content-between">
+                        @if (zbor.Status == "Planificat")
+                        {
+                            <a asp-controller="Zbor" asp-action="Detalii" asp-route-id="@zbor.IdZbor" class="btn btn-primary btn-sm">Detalii</a>
+                        }
+                        else
+                        {
+                            <span class="text-muted">Detalii indisponibile</span>
+                        }
 
-@* <div class="mb-3"> *@
-@*     <a class="btn btn-success" asp-controller="Zbor" asp-action="Add">Adaugă zbor</a> *@
-@* </div> *@
+                        @* <a asp-controller="Zbor" asp-action="Edit" asp-route-id="@zbor.IdZbor" class="btn btn-warning btn-sm">Editează</a> *@
+
+                        @* Form pentru ștergere (confirmare de ștergere) *@
+                        <form asp-controller="Zbor" asp-action="Delete" method="post" style="display:inline;" onsubmit="return confirm('Ești sigur că vrei să ștergi acest zbor?');">
+                            <input type="hidden" name="IdZbor" value="@zbor.IdZbor" />
+                            <button type="submit" class="btn btn-danger btn-sm">Șterge</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @* <div class="mb-3"> *@
+    @*     <a class="btn btn-success" asp-controller="Zbor" asp-action="Add">Adaugă Zbor</a> *@
+    @* </div> *@
+</div>

@@ -42,6 +42,9 @@ namespace ProjectWeb.Migrations
                     b.Property<int>("IdZbor")
                         .HasColumnType("int");
 
+                    b.Property<bool>("IsValid")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<string>("LocRezervat")
                         .HasColumnType("longtext");
 

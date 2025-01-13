@@ -17,6 +17,11 @@ builder.Services.AddScoped<IZborService, ZborService>();
 builder.Services.AddScoped<IUtilizatorService, UtilizatorService>(); // Adaugă serviciul pentru utilizatori
 builder.Services.AddScoped<ICheckinService, CheckinService>(); // Adaugă serviciul pentru check-in
 builder.Services.AddSingleton<ICacheService, MemoryCacheService>();
+builder.Services.AddLogging(options =>
+{
+    options.AddConsole();
+    options.AddDebug();
+});
 
 // Integrarea Autofac prin ContainerConfigurer
 builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
@@ -54,6 +59,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Zbor}/{action=List}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

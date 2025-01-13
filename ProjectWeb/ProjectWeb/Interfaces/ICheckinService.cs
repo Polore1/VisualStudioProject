@@ -10,5 +10,7 @@ namespace ProjectWeb.Interfaces
         Task<bool> ValidateCheckinAsync(Checkin checkin); // Validarea check-in-ului
 
         Task DeleteCheckinByIdAsync(int id);
+        Task<(decimal taxaSuplimentara, string mesaj)> CalculeazaTaxaBagaj(Checkin checkin);
+        Task UpdateCheckinAsync(Checkin checkin);
     }
 }

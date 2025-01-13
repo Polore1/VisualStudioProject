@@ -1,59 +1,72 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model List<ProjectWeb.Models.Entities.Checkin>
 
 @{
     var successMessage = TempData["SuccessMessage"] as string;
 }
-@model List<ProjectWeb.Models.Entities.Checkin>
 
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Check-in-uri</h1>
 
-<h1>Check In</h1>
+    @if (!string.IsNullOrEmpty(successMessage))
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @successMessage
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
 
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Id Checkin</th>
-            <th>Utilizator ID</th>
-            <th>Zbor ID</th>
-            <th>Greutate Bagaj</th>
-            <th>Data Checkin</th>
-            <th>Loc Rezervat</th>
-            <th>Este Valid</th>
-            <th> </th>
-        </tr>
-    </thead>
-
-    <tbody>
-        @foreach (var checkin in Model)
-        {
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="thead-dark">
             <tr>
-                <td>@checkin.IdCheckin</td>
-                <td>@checkin.IdUtilizator</td>
-                <td>@checkin.IdZbor</td>
-                <td>@checkin.GreutateBagaj</td>
-                <td>@checkin.DataCheckin</td>
-                <td>@checkin.LocRezervat</td>
-                <td>@(checkin.EsteValid ? "✅ Valid" : "❌ Invalid")</td>
-                <td>
-                    @*Creare buton pentru editare zbor*@
-                    <a class="btn btn-primary" asp-controller="Checkin" asp-action="Edit" asp-route-id="@checkin.IdZbor">Edit</a>
-
-                    @*Creare buton sterge zbor*@
-                    <form asp-controller="Zbor" asp-action="Delete" method="post" style="display:inline;" onsubmit="return confirm('Ești sigur că vrei să ștergi acest checkin?');">
-                        <input type="hidden" name="IdCheckin" value="@checkin.IdCheckin" />
-                        <button type="submit" class="btn btn-danger">Șterge</button>
-                    </form>
-
-                </td>
+                <th>Id Checkin</th>
+                <th>Utilizator ID</th>
+                <th>Zbor ID</th>
+                <th>Greutate Bagaj</th>
+                <th>Data Checkin</th>
+                <th>Loc Rezervat</th>
+                @* <th>Este Valid</th> *@
+                <th>Acțiuni</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
 
-<div class="mb-3">
-    <a class="btn btn-success" asp-controller="Checkin" asp-action="Add">Adaugă checkin</a>
+        <tbody>
+            @foreach (var checkin in Model)
+            {
+                <tr>
+                    <td>@checkin.IdCheckin</td>
+                    <td>@checkin.IdUtilizator</td>
+                    <td>@checkin.IdZbor</td>
+                    <td>@checkin.GreutateBagaj</td>
+                    <td>@checkin.DataCheckin</td>
+                    <td>@checkin.LocRezervat</td>
+                    @* <td>@(checkin.EsteValid ? "<span class='text-success'>✅ Valid</span>" : "<span class='text-danger'>❌ Invalid</span>")</td> *@
+                    <td>
+                        <!-- Buton Editare -->
+                        <a class="btn btn-primary btn-sm" asp-controller="Checkin" asp-action="Edit" asp-route-id="@checkin.IdZbor">
+                            <i class="fas fa-edit"></i> Edit
+                        </a>
+
+                        <!-- Formular pentru ștergere cu confirmare -->
+                        <form asp-controller="Checkin" asp-action="Delete" method="post" style="display:inline;" onsubmit="return confirm('Ești sigur că vrei să ștergi acest check-in?');">
+                            <input type="hidden" name="IdCheckin" value="@checkin.IdCheckin" />
+                            <button type="submit" class="btn btn-danger btn-sm">
+                                <i class="fas fa-trash-alt"></i> Șterge
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @* <div class="text-center mt-4"> *@
+    @*     <a class="btn btn-success btn-lg" asp-controller="Checkin" asp-action="Add"> *@
+    @*         <i class="fas fa-plus-circle"></i> Adaugă Check-in *@
+    @*     </a> *@
+    @* </div> *@
 </div>
+
+<!-- Adăugăm Font Awesome pentru icoane (opțional, dacă nu sunt deja incluse) -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>

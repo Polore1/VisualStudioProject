@@ -10,6 +10,7 @@
     <h1 class="text-center mb-4">Adăugare Check-in</h1>
 
     <form method="post" asp-action="Add" class="p-4 border rounded shadow-sm bg-light">
+
         <div class="form-group mb-3">
             <label for="IdUtilizator" class="form-label">Utilizator</label>
             <select asp-for="IdUtilizator" asp-items="Model.Utilizatori" class="form-control">
@@ -31,6 +32,7 @@
             <input asp-for="GreutateBagaj" class="form-control" placeholder="Introduceți greutatea bagajului" />
             <span asp-validation-for="GreutateBagaj" class="text-danger"></span>
         </div>
+
         <div class="alert alert-warning mt-3 d-none" id="TaxaBagajMessage">
             Bagajul depășește greutatea maximă permisă. O taxă suplimentară de <strong id="TaxaBagajValue">0</strong> EUR se va aplica.
         </div>
@@ -48,119 +50,34 @@
         </div>
 
         <div class="form-group mb-3">
-            <label for="PretFinal" class="form-label">Preț Final</label>
+            <label for="PretFinal" class="form-label">Preț Calatorie</label>
             <div class="alert alert-info p-2">
                 @Model.PretFinal EUR
             </div>
         </div>
-        @* <div class="form-group mb-3"> *@
-        @*     <label for="TaxaBagaj" class="form-label">Taxa Bagaj Suplimentar</label> *@
-        @*     <div class="alert alert-info p-2"> *@
-        @*         @Model.PretFinal EUR *@
-        @*     </div> *@
-        @* </div> *@
 
         <div class="d-flex justify-content-between align-items-center">
             <a href="@Url.Action("List", "Zbor")" class="btn btn-secondary">Înapoi la Lista de Zboruri</a>
-            <button type="submit" class="btn btn-primary">Validați Check-in</button>
+            <button type="submit" class="btn btn-primary">Adaugă Check-in</button>
         </div>
     </form>
 </div>
 
-<body>
-    <h2>Check-in Bagaj</h2>
+<script>
+    document.getElementById('GreutateBagaj').addEventListener('input', function () {
+        const greutateMaxima = parseFloat(document.getElementById('GreutateMaximaBagaj').value || 0);
+        const greutateBagaj = parseFloat(this.value);
+        const taxaMessage = document.getElementById('TaxaBagajMessage');
+        const taxaValue = document.getElementById('TaxaBagajValue');
 
-    <form method="post" action="@Url.Action("AddAsync", "Checkin")">
-        <div class="form-group mb-3">
-            <label for="GreutateBagaj" class="form-label">Greutate Bagaj (kg)</label>
-            <input type="number" id="GreutateBagaj" name="GreutateBagaj" class="form-control" />
-            <span asp-validation-for="GreutateBagaj" class="text-danger"></span>
-        </div>
+        if (greutateBagaj > greutateMaxima) {
+            const taxa = (greutateBagaj - greutateMaxima) * 50; // Exemplu: 50 EUR/kg
+            taxaValue.textContent = taxa.toFixed(2);
+            taxaMessage.classList.remove('d-none');
+        } else {
+            taxaMessage.classList.add('d-none');
+        }
+    });
+</script>
 
-        <div class="form-group mb-3">
-            <label for="GreutateMaxima" class="form-label">Greutate Maxima Permisă (kg)</label>
-            @* <input type="hidden" id="GreutateMaxima" value="@Model." /> *@
-        </div>
 
-        <div class="form-group mb-3">
-            <label for="TaxaSuplimentara" class="form-label">Taxa Suplimentară</label>
-            <input type="hidden" id="TaxaSuplimentara" value="" />
-        </div>
-
-        <div class="form-group mb-3">
-            <label for="PretZbor" class="form-label">Preț Zbor</label>
-            <input type="hidden" id="PretZbor" value="@Model.PretFinal" />
-        </div>
-
-        <div class="form-group mb-3">
-            <label for="PretFinal" class="form-label">Preț Final</label>
-            <input type="text" id="PretFinal" name="PretFinal" class="form-control" readonly />
-        </div>
-
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-
-    <script>
-        document.getElementById('GreutateBagaj').addEventListener('input', function() {
-            var greutateBagaj = parseFloat(document.getElementById('GreutateBagaj').value);
-            var greutateMaxima = parseFloat(document.getElementById('GreutateMaxima').value);  // Greutatea maximă de la zbor
-            var taxaSuplimentara = parseFloat(document.getElementById('TaxaSuplimentara').value);  // Taxa suplimentară de la zbor
-            var pretZbor = parseFloat(document.getElementById('PretZbor').value);  // Prețul de bază al zborului
-
-            var pretFinal = pretZbor; // Prețul inițial
-
-            // Verificăm dacă greutatea bagajului depășește greutatea maximă
-            if (greutateBagaj > greutateMaxima) {
-                pretFinal += taxaSuplimentara;  // Adăugăm taxa suplimentară
-            }
-
-            // Actualizăm câmpul Preț Final
-            document.getElementById('PretFinal').value = pretFinal.toFixed(2);  // Setăm prețul final cu 2 zecimale
-        });
-    </script>
-</body>
-
-@* <h1>Adaugare check-in</h1> *@
-
-@* <form method="post" asp-action="Add"> *@
-
-@*     <div class="form-group"> *@
-@*         <label for="IdUtilizator">Utilizator</label> *@
-@*         <select asp-for="IdUtilizator" asp-items="Model.Utilizatori" class="form-control"></select> *@
-@*         <span asp-validation-for="IdUtilizator" class="text-danger"></span> *@
-@*     </div> *@
-
-@*     <div class="form-group"> *@
-@*         <label for="IdZbor">Zbor</label> *@
-@*         <select asp-for="IdZbor" asp-items="Model.Zboruri" class="form-control"></select> *@
-@*         <span asp-validation-for="IdZbor" class="text-danger"></span> *@
-@*     </div> *@
-
-@*     <div class="form-group"> *@
-@*         <label for="GreutateBagaj">Greutatea bagajului</label> *@
-@*         <input asp-for="GreutateBagaj" class="form-control" /> *@
-@*         <span asp-validation-for="GreutateBagaj" class="text-danger"></span> *@
-@*     </div> *@
-
-@*     <div class="form-group"> *@
-@*         <label for="LocRezervat">Loc rezervat</label> *@
-@*         <input asp-for="LocRezervat" class="form-control" /> *@
-@*         <span asp-validation-for="LocRezervat" class="text-danger"></span> *@
-@*     </div> *@
-
-@*     <div class="form-group"> *@
-@*         <label for="DataCheckin">Data Check-in</label> *@
-@*         <input asp-for="DataCheckin" type="datetime-local" class="form-control" /> *@
-@*         <span asp-validation-for="DataCheckin" class="text-danger"></span> *@
-@*     </div> *@
-@*     <div> *@
-@*         <label>Taxa Bagaj Suplimentar:</label> *@
-@*         <span>@Model.TaxaBagaj</span> *@
-@*     </div> *@
-
-@*     <button type="submit" class="btn btn-primary">Validati Check-in</button> *@
-@* </form> *@
-
-@* <div> *@
-@*     <a href="@Url.Action("Index")">Înapoi la listă</a> *@
-@* </div> *@
