@@ -39,8 +39,12 @@ ProjectWeb is a flight management application that allows users to view, modify,
 
  - You can open Documentation file for some pictures and some more detalis about this project
 
-### Screenshots
+### ------------------- Screenshots -------------------
 Here are some screenshots of the application in action:
+
+### Database
+![Database](assets/images/databse.png)
+Here you can see the structure of the database created in MySQL Workbench.
 
 ### Homepage
 ![Homepage](assets/images/homepage.png)
@@ -56,4 +60,14 @@ This page displays detailed information for a selected flight, such as destinati
 
 ### Check-in
 ![Check-in](assets/images/checkin-page.png)
-Here users can check in for their flight. If the flight status is "Planned", users can proceed with check-in.
+Here users can check in for their flight. They can add the wheights of their lagguadge. If is more that it should be, that a fee would be added.
+
+### 
+![Check-in](assets/images/checkin-page.png)
+Here users can check in for their flight. They can add the wheights of their lagguadge. If is more that it should be, that a fee would be added.
+
+### Users
+![Users](assets/images/users.png)
+Here you can see all users that are in database.
+
+
