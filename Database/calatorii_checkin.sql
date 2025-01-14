@@ -1,0 +1,61 @@
+-- MySQL dump 10.13  Distrib 8.0.20, for Win64 (x86_64)
+--
+-- Host: localhost    Database: calatorii
+-- ------------------------------------------------------
+-- Server version	8.0.20
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `checkin`
+--
+
+DROP TABLE IF EXISTS `checkin`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `checkin` (
+  `IdCheckin` int NOT NULL AUTO_INCREMENT,
+  `IdUtilizator` int NOT NULL,
+  `IdZbor` int NOT NULL,
+  `GreutateBagaj` decimal(5,2) NOT NULL,
+  `DataCheckin` datetime(6) NOT NULL,
+  `LocRezervat` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `PretFinal` decimal(18,1) NOT NULL DEFAULT '0.0',
+  `IsValid` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`IdCheckin`),
+  KEY `IX_Checkin_IdUtilizator` (`IdUtilizator`),
+  KEY `IX_Checkin_IdZbor` (`IdZbor`),
+  CONSTRAINT `FK_Checkin_Utilizator_IdUtilizator` FOREIGN KEY (`IdUtilizator`) REFERENCES `utilizator` (`IdUtilizator`) ON DELETE CASCADE,
+  CONSTRAINT `FK_Checkin_Zbor_IdZbor` FOREIGN KEY (`IdZbor`) REFERENCES `zbor` (`IdZbor`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `checkin`
+--
+
+LOCK TABLES `checkin` WRITE;
+/*!40000 ALTER TABLE `checkin` DISABLE KEYS */;
+INSERT INTO `checkin` VALUES (1,1,1,20.00,'2024-12-12 14:30:00.000000','12A',10.0,0),(2,3,1,125.00,'2025-01-10 11:53:35.723000','C12',75.0,0),(3,1,1,120.00,'2025-01-10 11:54:52.243000','15B',25.0,1),(4,8,4,50.00,'2025-01-10 15:05:29.234000','20A',360.0,1),(5,5,1,10.00,'2025-01-10 15:35:46.388000','B12',25.0,1),(6,7,3,15.00,'2025-01-10 15:38:51.358000','B12',40.0,0),(7,8,3,25.00,'2025-01-10 16:06:52.671000','17B',65.0,0),(8,5,3,45.00,'2025-01-10 23:36:07.341000','12B',165.0,0),(9,7,3,30.00,'2025-01-10 23:39:15.405000','12B',90.0,0),(10,5,3,40.00,'2025-01-11 19:49:17.372000','12B',140.0,0),(11,5,5,90.00,'2025-01-13 18:18:32.687000','C12',270.0,0),(12,8,1,130.00,'2025-01-13 19:43:35.164000','A13',125.0,0),(13,5,3,21.00,'2025-01-13 19:44:33.712000','B12',45.0,0);
+/*!40000 ALTER TABLE `checkin` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-01-14 17:03:33
